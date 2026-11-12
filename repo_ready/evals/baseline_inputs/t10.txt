@@ -1,0 +1,1 @@
+SSO login requires the new auth service which is being built by Team Alpha. ETA unknown.
