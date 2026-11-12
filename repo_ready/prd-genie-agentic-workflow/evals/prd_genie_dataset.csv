@@ -1,0 +1,52 @@
+test_id,input,expected_output,stages,type
+T1,"The user should be able to filter reports by date range, category, and status. Results must load in under 2 seconds. PM: Sarah. Deadline: Q3.","Filter by date range, category and status; 2-second load time; PM Sarah; Q3 deadline; No requirements that are not in the input",ANALYZE,Detailed
+T2,We need better reporting. Something like what Competitor X has.,Flagged as ambiguous / insufficient; Missing info: what metrics; Missing info: what format; Missing info: what users; No invented requirements,ANALYZE,Vague
+T3,"The dashboard should auto-refresh every 5 seconds. [Later in same meeting] Performance is critical, minimize API calls.",Contradiction identified (frequent refresh vs minimize API calls); Flagged for stakeholder resolution; No side chosen,ANALYZE,Contradictory
+T4,Users need to export reports as PDF and CSV. PDF must include company logo. CSV must preserve formulas.,Acceptance criteria verbatim: PDF must include company logo; Acceptance criteria verbatim: CSV must preserve formulas; Stories generated with these as criteria; No extra criteria added,ANALYZE > PRD > STORIES,Detailed with acceptance criteria
+T5,Discussed dashboard... John mentioned something about real-time... budget TBD...,Flagged as insufficient; Missing: which dashboard; Missing: what real-time; Missing: what budget; No assumptions filled in,ANALYZE,Incomplete
+T6,Engineering wants microservices. Design wants single-page app. PM wants it shipped by March.,All three viewpoints captured; Tension identified; No viewpoint favoured,ANALYZE,Multi-stakeholder
+T7,"API must support 10,000 concurrent users. Response time < 200ms at p95. Must integrate with Salesforce REST API v52.","10,000 concurrent users (exact); 200ms at p95 (exact); Salesforce REST API v52 (exact); Classified as non-functional; Numbers not rounded",ANALYZE,Technical
+T8,Admins need bulk user management. End users need a simplified view. Auditors need read-only access with full history.,"Three personas (Admin, End User, Auditor); Separate stories for each persona; Personas not merged",ANALYZE > PRD > STORIES,Persona-based
+T9,Meeting happened. Notes: none.,Flagged: no requirements extractable; PRD gate stops: no PRD generated,ANALYZE > PRD (gate),Edge case
+T10,SSO login requires the new auth service which is being built by Team Alpha. ETA unknown.,SSO extracted as the feature; Dependency on auth service / Team Alpha flagged; Unknown ETA flagged as a risk,ANALYZE,Dependency
+T11,"{""sufficiency"":""SUFFICIENT"",""sufficiency_reason"":""The input contains clear and testable requirements."",""source_type"":""transcript"",""stated_requirements"":[{""id"":""REQ-001"",""type"":""functional"",""text"":""The user should be able to filter reports by date range, category, and status."",""verbatim_quote"":""The user should be able to filter reports by date range, category, and status."",""speaker"":""UNKNOWN"",""priority_signal"":""UNKNOWN""},{""id"":""REQ-002"",""type"":""non_functional"",""text"":""Results must load in under 2 seconds."",""verbatim_quote"":""Results must load in under 2 seconds."",""speaker"":""UNKNOWN"",""priority_signal"":""UNKNOWN""}],""acceptance_criteria"":[],""stakeholders"":[{""name"":""Sarah"",""role"":""PM"",""viewpoint"":""UNKNOWN""}],""deadlines"":[{""item"":""Project Deadline"",""date"":""Q3""}],""dependencies"":[],""assumptions_stated"":[],""ambiguous_items"":[],""contradictions"":[],""risks"":[]}",Follows the PRD template structure; All 10 sections present; Only requirements from T1,PRD,PRD generation
+T12,"# Product Requirements Document
+## 1. Product Overview
+- Product Name: Not specified in source
+- Document Version: 1.0
+- Author: AI-generated draft for PM review (PM owner: Sarah)
+- Date: 2026-10-25
+- Status: Draft
+## 2. Goals and Objectives
+- Business Goal: Not specified in source
+- User Goal: Not specified in source
+- Success Metrics: Not specified in source
+## 3. User Personas
+Name / Role: User, Key Need: Not specified in source, Current Workaround: Not specified in source
+## 4. Feature Requirements
+### 4.1 Functional Requirements
+| ID | Requirement | Priority | Source |
+|----|-------------|----------|--------|
+| FR-001 | The user should be able to filter reports by date range, category, and status. | Unprioritized | REQ-001 |
+### 4.2 Non-Functional Requirements
+| ID | Requirement | Category | Target |
+|----|-------------|----------|--------|
+| NFR-001 | Results must load in under 2 seconds. | Performance | under 2 seconds (REQ-002) |
+## 5. Acceptance Criteria
+None stated in source
+## 6. Out of Scope
+Not specified in source
+## 7. Dependencies
+None stated in source
+## 8. Assumptions
+Not specified in source
+## 9. Open Questions
+None stated in source.
+## 10. Timeline
+| Milestone | Target Date |
+|-----------|-------------|
+| Design Complete | Not specified in source |
+| Development Start | Not specified in source |
+| QA / Testing | Not specified in source |
+| Launch | Not specified in source |
+Other deadlines (as stated): Project Deadline Q3",Epics and stories in 'As a [user]' format; Priority suggestion on every story,STORIES,Story breakdown

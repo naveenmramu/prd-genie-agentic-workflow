@@ -1,0 +1,1 @@
+The dashboard should auto-refresh every 5 seconds. [Later in same meeting] Performance is critical, minimize API calls.
