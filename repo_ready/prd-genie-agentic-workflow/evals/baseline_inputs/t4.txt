@@ -1,1 +1,0 @@
-Users need to export reports as PDF and CSV. PDF must include company logo. CSV must preserve formulas.

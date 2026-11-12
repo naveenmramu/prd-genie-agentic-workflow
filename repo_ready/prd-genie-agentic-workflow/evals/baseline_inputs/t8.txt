@@ -1,1 +1,0 @@
-Admins need bulk user management. End users need a simplified view. Auditors need read-only access with full history.
